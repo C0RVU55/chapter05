@@ -15,8 +15,8 @@ public class BufferedStreamApp {
 		
 		/* 바이트(사진, 소리) / 문자열
 		 [[HDD]] ---InputStream(←FileInputStream) / Reader(←FileReader)---> [[프로그램]] ---OutputStream(←FileOutputStream) / Writer(←FileWriter)--> [[HDD]]
-		 						/ InputStreamReader												/ OutputStreamWriter
-		 			BufferedInputStream / BufferedReader							BufferedOutputStream / BufferedWriter
+		 			/ InputStreamReader									/ OutputStreamWriter
+		 			BufferedInputStream / BufferedReader				BufferedOutputStream / BufferedWriter
 		 [[HDD]] --------------(불러오기)Input 이동경로 생성--------------> [[프로그램]] --------------(내보내기)Output 이동경로 생성--------------> [[HDD]]
 		*/
 		
