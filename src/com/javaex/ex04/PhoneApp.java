@@ -1,9 +1,12 @@
 package com.javaex.ex04;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,14 +37,21 @@ public class PhoneApp {
 
 		// 추가
 		System.out.println("-----데이터 추가-----");
-		
+
 		Person pp = new Person("이다현", "000-0000-0000", "123-123123-22");
 		pList.add(pp);
 		for (int i = 0; i < pList.size(); i++) {
 			pList.get(i).showInfo();
 		}
 
+		// 수정한 파일 내보내기 ???
+		Writer out = new FileWriter("C:\\javaStudy\\PhoneDB.txt");
+		BufferedWriter bw = new BufferedWriter(out);
+		
+		//bw.write();
+		
 		br.close();
+		bw.close();
 	}
 
 }
