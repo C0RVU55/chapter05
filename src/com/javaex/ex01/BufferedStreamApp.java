@@ -8,15 +8,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class bufferedStreamApp {
+public class BufferedStreamApp {
 
 	public static void main(String[] args) throws IOException { // 오류처리
 		// 보조 스트림 : BufferedInputStream BufferedOutputStream
 		
 		/* 바이트(사진, 소리) / 문자열
 		 [[HDD]] ---InputStream(←FileInputStream) / Reader(←FileReader)---> [[프로그램]] ---OutputStream(←FileOutputStream) / Writer(←FileWriter)--> [[HDD]]
-		 									/ InputStreamReader															/ OutputStreamWriter
-		 				BufferedInputStream / BufferedReader										BufferedOutputStream / BufferedWriter
+		 						/ InputStreamReader												/ OutputStreamWriter
+		 			BufferedInputStream / BufferedReader							BufferedOutputStream / BufferedWriter
 		 [[HDD]] --------------(불러오기)Input 이동경로 생성--------------> [[프로그램]] --------------(내보내기)Output 이동경로 생성--------------> [[HDD]]
 		*/
 		
